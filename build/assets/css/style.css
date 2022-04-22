@@ -1,0 +1,172 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+*:link,
+*:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  max-width: 1400px;
+}
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.section-title {
+  background-color: red;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.card {
+  width: 208px;
+  height: 270px;
+  border-radius: 8px;
+  border: solid 1px #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+  position: relative;
+}
+.card__fav {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.card__img-wrapper {
+  border: 1px solid #e0e0e0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.card__title {
+  display: flex;
+  align-items: center;
+}
+.card__title p {
+  font-weight: 500;
+}
+.card__title img {
+  width: 20px;
+  height: 14px;
+  object-fit: contain;
+  margin-right: 3px;
+}
+.card__price {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card__time {
+  display: flex;
+  align-items: center;
+  color: #0061a3;
+  font-weight: 500;
+}
+.card__time img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  margin-right: 4px;
+}
+
+.btn {
+  background-color: #f7d300;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding: 7px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+@media only screen and (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

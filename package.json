@@ -1,0 +1,12 @@
+{
+	"name": "SW",
+	"version": "1.0.0",
+	"description": "SW",
+	"main": "index.js",
+	"scripts": {},
+	"author": "Mohamed Hasan",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.50.1"
+	}
+}
